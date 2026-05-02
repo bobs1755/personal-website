@@ -1,0 +1,11 @@
+/node_modules
+/.next/
+/out/
+.DS_Store
+*.pem
+.env*.local
+.vercel
+
+# Source materials — images already copied to public/images/, PDFs contain personal info
+/portfolio_pics_05022026/
+/*.pdf
