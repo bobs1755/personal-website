@@ -25,7 +25,7 @@ export default function NavBar() {
             href="/"
             className="text-yellow-400 font-black text-xl tracking-tight hover:text-yellow-500 transition-colors"
           >
-            Bob Seif
+            Bob
           </Link>
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map(({ href, label }) => (

@@ -2,8 +2,8 @@ import { EmailIcon, LinkedInIcon, GoogleScholarIcon, YouTubeIcon } from '@/compo
 
 const socialLinks = [
   { href: 'mailto:bseif4email@gmail.com', Icon: EmailIcon, label: 'Email' },
-  { href: 'https://linkedin.com/in/robertseif', Icon: LinkedInIcon, label: 'LinkedIn' },
-  { href: 'https://scholar.google.com', Icon: GoogleScholarIcon, label: 'Google Scholar' },
+  { href: 'https://www.linkedin.com/in/robert-seif/', Icon: LinkedInIcon, label: 'LinkedIn' },
+  { href: 'https://scholar.google.com/citations?hl=en&user=X6RaYMUAAAAJ', Icon: GoogleScholarIcon, label: 'Google Scholar' },
   { href: 'https://www.youtube.com/@Bobby_Plus', Icon: YouTubeIcon, label: 'YouTube' },
 ]
 
@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="bg-dark-900 border-t border-dark-600 py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-6">
-        <p className="text-yellow-400 font-black text-lg">Bob Seif</p>
+        <p className="text-yellow-400 font-black text-lg">Bob</p>
         <p className="text-gray-300 text-sm text-center">Engineer. Maker. Builder.</p>
         <div className="flex items-center gap-6">
           {socialLinks.map(({ href, Icon, label }) => (
@@ -28,7 +28,7 @@ export default function Footer() {
           ))}
         </div>
         <p className="text-gray-500 text-xs">
-          &copy; {new Date().getFullYear()} Robert Seif. All rights reserved.
+          &copy; {new Date().getFullYear()} Bob. All rights reserved.
         </p>
       </div>
     </footer>

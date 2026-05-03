@@ -14,7 +14,7 @@ export default function Hero() {
           Hi, I&apos;m
         </p>
         <h1 className="text-6xl sm:text-7xl md:text-8xl font-black text-gray-100 leading-none mb-4">
-          Bob Seif.
+          Bob.
         </h1>
         <div className="flex flex-col sm:flex-row sm:gap-4 text-3xl sm:text-4xl md:text-5xl font-black text-gray-400 mb-8 leading-tight">
           <span>ENGINEER.</span>

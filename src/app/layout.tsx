@@ -10,9 +10,9 @@ const inter = Inter({
 })
 
 export const metadata: Metadata = {
-  title: 'Bob Seif — Engineer. Maker. Builder.',
+  title: 'Bob — Engineer. Maker. Builder.',
   description:
-    'Personal portfolio of Robert Seif — mechanical engineer, AI researcher, and TEDx speaker.',
+    'Personal portfolio of Bob — mechanical engineer, AI researcher, and TEDx speaker.',
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

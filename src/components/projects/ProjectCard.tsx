@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Tag from '@/components/ui/Tag'
 import type { Project } from '@/lib/types'
 
@@ -7,12 +6,10 @@ export default function ProjectCard({ project }: { project: Project }) {
     <div className="bg-dark-800 border border-dark-600 hover:border-yellow-400 rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col">
       <div className="aspect-video bg-dark-700 relative overflow-hidden">
         {project.imageSrc ? (
-          <Image
+          <img
             src={project.imageSrc}
             alt={project.imageAlt}
-            fill
-            className="object-cover"
-            unoptimized
+            className="w-full h-full object-cover"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">
@@ -23,10 +20,12 @@ export default function ProjectCard({ project }: { project: Project }) {
         )}
       </div>
       <div className="p-6 flex flex-col flex-1">
-        <div className="mb-3">
-          <span className="text-xs font-mono text-yellow-400 uppercase tracking-widest bg-dark-700 px-2 py-1 rounded border border-dark-600">
-            {project.category}
-          </span>
+        <div className="flex flex-wrap gap-1 mb-3">
+          {project.categories.map((cat) => (
+            <span key={cat} className="text-xs font-mono text-yellow-400 uppercase tracking-widest bg-dark-700 px-2 py-1 rounded border border-dark-600">
+              {cat}
+            </span>
+          ))}
         </div>
         <h3 className="text-xl font-black text-gray-100 mb-2">{project.title}</h3>
         <p className="text-sm text-gray-300 mb-4 flex-1 leading-relaxed">{project.description}</p>

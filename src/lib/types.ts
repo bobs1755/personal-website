@@ -1,7 +1,7 @@
 export interface Project {
   id: string
   title: string
-  category: 'Maker' | 'Mechanical' | 'Electronics' | 'Software' | 'Research'
+  categories: Array<'Maker' | 'Mechanical' | 'Electronics' | 'Software' | 'Research'>
   description: string
   tags: string[]
   imageSrc?: string

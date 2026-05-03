@@ -11,7 +11,7 @@ const CATEGORIES: Category[] = ['All', 'Maker', 'Mechanical', 'Electronics', 'So
 export default function ProjectGrid({ projects }: { projects: Project[] }) {
   const [active, setActive] = useState<Category>('All')
 
-  const filtered = active === 'All' ? projects : projects.filter((p) => p.category === active)
+  const filtered = active === 'All' ? projects : projects.filter((p) => p.categories.includes(active))
 
   return (
     <div>

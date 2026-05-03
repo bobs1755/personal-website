@@ -10,14 +10,14 @@ const contactCards = [
   },
   {
     platform: 'LinkedIn',
-    handle: 'linkedin.com/in/robertseif',
-    href: 'https://linkedin.com/in/robertseif',
+    handle: 'linkedin.com/in/robert-seif',
+    href: 'https://www.linkedin.com/in/robert-seif/',
     Icon: LinkedInIcon,
   },
   {
     platform: 'Google Scholar',
-    handle: 'Robert Seif',
-    href: 'https://scholar.google.com',
+    handle: 'Robert',
+    href: 'https://scholar.google.com/citations?hl=en&user=X6RaYMUAAAAJ',
     Icon: GoogleScholarIcon,
   },
   {

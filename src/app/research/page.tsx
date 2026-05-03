@@ -19,7 +19,7 @@ export default function ResearchPage() {
           ))}
         </div>
         <div className="border-t border-dark-600 pt-12 flex flex-wrap gap-4 justify-center">
-          <Button href="https://scholar.google.com" variant="ghost">
+          <Button href="https://scholar.google.com/citations?hl=en&user=X6RaYMUAAAAJ" variant="ghost">
             <GoogleScholarIcon className="w-5 h-5" />
             Google Scholar
           </Button>
