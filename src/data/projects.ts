@@ -21,7 +21,7 @@ export const projects: Project[] = [
     tags: ['Python', 'OpenCV', 'PyTorch', 'JAX', 'Computer Vision'],
     imageSrc: '/images/projects/misc/cv_house.png',
     imageAlt: 'Casafy.ai real estate AI platform',
-    featured: false,
+    featured: true,
   },
   {
     id: 'grad-research',
@@ -32,7 +32,7 @@ export const projects: Project[] = [
     tags: ['DoD', 'Computer Vision', 'Simulation', 'Machine Learning', 'Python'],
     imageSrc: '/images/research/quad-stitched.jpg',
     imageAlt: 'Multi-fidelity testing framework for AI-enabled systems',
-    featured: false,
+    featured: true,
   },
   {
     id: 'fsae-chassis',
@@ -43,7 +43,7 @@ export const projects: Project[] = [
     tags: ['Siemens NX', 'ANSYS Workbench', 'FEA', 'Structural Analysis', 'FSAE'],
     imageSrc: '/images/projects/kart-chassis/fea-upright.png',
     imageAlt: 'FSAE go-kart chassis final design render',
-    featured: true,
+    featured: false,
   },
   {
     id: 'gear-opti',
@@ -54,7 +54,7 @@ export const projects: Project[] = [
     tags: ['MATLAB', 'Mechanical Design', 'Optimization', 'FOS Analysis'],
     imageSrc: '/images/projects/gear-opti/fos-map.png',
     imageAlt: 'Factor of Safety map for gear optimization program',
-    featured: true,
+    featured: false,
   },
   {
     id: 'kart-throttle',

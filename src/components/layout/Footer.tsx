@@ -11,7 +11,6 @@ export default function Footer() {
   return (
     <footer className="bg-dark-900 border-t border-dark-600 py-12">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center gap-6">
-        <p className="text-yellow-400 font-black text-lg">Bob</p>
         <p className="text-gray-300 text-sm text-center">Engineer. Maker. Builder.</p>
         <div className="flex items-center gap-6">
           {socialLinks.map(({ href, Icon, label }) => (

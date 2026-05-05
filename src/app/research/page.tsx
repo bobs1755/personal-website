@@ -13,19 +13,19 @@ export default function ResearchPage() {
           title="Published Research"
           subtitle="Focused on testing and evaluation of AI-enabled systems for DoD acquisition programs."
         />
-        <div className="flex flex-col gap-8 mb-16">
-          {researchPapers.map((paper) => (
-            <ResearchCard key={paper.id} paper={paper} />
-          ))}
-        </div>
-        <div className="border-t border-dark-600 pt-12 flex flex-wrap gap-4 justify-center">
+        <div className="flex flex-wrap gap-4 justify-center mb-12">
           <Button href="https://scholar.google.com/citations?hl=en&user=X6RaYMUAAAAJ" variant="ghost">
             <GoogleScholarIcon className="w-5 h-5" />
             Google Scholar
           </Button>
-          <Button href="https://www.researchgate.net" variant="ghost">
+          <Button href="https://www.researchgate.net/profile/Robert-Seif-2?ev=hdr_xprf" variant="ghost">
             ResearchGate
           </Button>
+        </div>
+        <div className="flex flex-col gap-8">
+          {researchPapers.map((paper) => (
+            <ResearchCard key={paper.id} paper={paper} />
+          ))}
         </div>
       </div>
     </section>

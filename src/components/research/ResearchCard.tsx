@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Button from '@/components/ui/Button'
 import type { ResearchPaper } from '@/lib/types'
 
@@ -5,11 +6,12 @@ export default function ResearchCard({ paper }: { paper: ResearchPaper }) {
   return (
     <div className="bg-dark-800 border border-dark-600 hover:border-yellow-400 rounded-xl overflow-hidden transition-all duration-300 flex flex-col md:flex-row">
       {paper.thumbnailSrc && (
-        <div className="md:w-52 aspect-video md:aspect-auto flex-shrink-0 bg-dark-700 overflow-hidden">
-          <img
+        <div className="md:w-52 aspect-video md:aspect-auto flex-shrink-0 bg-dark-700 overflow-hidden relative">
+          <Image
             src={paper.thumbnailSrc}
             alt={paper.title}
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
         </div>
       )}

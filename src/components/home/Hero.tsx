@@ -10,11 +10,11 @@ export default function Hero() {
         }}
       />
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-24 relative z-10 w-full">
-        <p className="text-yellow-400 font-mono text-base mb-4 tracking-widest uppercase">
+        <p className="text-gray-400 font-mono text-base mb-4 tracking-widest uppercase">
           Hi, I&apos;m
         </p>
-        <h1 className="text-6xl sm:text-7xl md:text-8xl font-black text-gray-100 leading-none mb-4">
-          Bob.
+        <h1 className="text-7xl sm:text-8xl md:text-9xl font-black text-yellow-400 leading-none mb-4">
+          Bob!
         </h1>
         <div className="flex flex-col sm:flex-row sm:gap-4 text-3xl sm:text-4xl md:text-5xl font-black text-gray-400 mb-8 leading-tight">
           <span>ENGINEER.</span>

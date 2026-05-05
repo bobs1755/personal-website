@@ -21,12 +21,6 @@ export default function NavBar() {
     <nav className="sticky top-0 z-50 bg-dark-900/90 backdrop-blur-sm border-b border-dark-600">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link
-            href="/"
-            className="text-yellow-400 font-black text-xl tracking-tight hover:text-yellow-500 transition-colors"
-          >
-            Bob
-          </Link>
           <div className="hidden md:flex items-center gap-8">
             {navLinks.map(({ href, label }) => (
               <Link

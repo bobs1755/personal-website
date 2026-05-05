@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Tag from '@/components/ui/Tag'
 import type { Project } from '@/lib/types'
 
@@ -6,10 +7,11 @@ export default function ProjectCard({ project }: { project: Project }) {
     <div className="bg-dark-800 border border-dark-600 hover:border-yellow-400 rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 flex flex-col">
       <div className="aspect-video bg-dark-700 relative overflow-hidden">
         {project.imageSrc ? (
-          <img
+          <Image
             src={project.imageSrc}
             alt={project.imageAlt}
-            className="w-full h-full object-cover"
+            fill
+            className="object-cover"
           />
         ) : (
           <div className="absolute inset-0 flex items-center justify-center">
